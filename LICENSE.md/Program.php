@@ -2,11 +2,10 @@
 $start = 1.4;
 $delta = 0.1;
 $kolvo = 11;
-$a[0] = $start;
-$a[1] = $start;
-$a[2] = $start;
-$a[3] = $start;
-$a[4] = $start;
+for ($i = 0; $i < 5; $i++)
+{
+	$a[$i] = $start;
+}
 echo "Наиб. вероятный"." Выигрыш Вероятность в плюсе Коэффициенты"."\n";
 for ($main4 = 0; $main4 < $kolvo; $main4++)
 {
@@ -20,7 +19,7 @@ for ($main2 = 0; $main2 < $kolvo; $main2++)
 for ($main1 = 0; $main1 < $kolvo; $main1++)
 {
 	$a[0] = $start;
-for ($main = 0; $main < $kolvo; $main++)	//Циклпопереборупервогокоэфф.
+for ($main = 0; $main < $kolvo; $main++)	//Цикл по перебору первого коэфф.
 {
 	$Schet = $Schet + 1;
 	for ($i = 0; $i< 5; $i++)
